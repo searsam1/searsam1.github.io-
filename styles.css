@@ -1,0 +1,108 @@
+
+/* Fonts */
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Gloock', serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Lacquer', cursive;
+font-family: 'Lato', sans-serif;
+ */
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+
+@font-face {
+    font-family: 'falloutNormal';
+    src: url('Overseer-Font\\Overseer.otf') format('opentype');
+    
+}
+
+@keyframes a{
+    0% {
+        background-color: orange;
+    }
+    33.3% {
+        background-color: blue;
+    }
+    66.6% {
+        background-color: green;
+    }
+    100% {
+        background-color: orange;
+    }
+  }
+
+#SocialMediaBreadcrums > li{
+    list-style-type: none;
+}
+
+#logo {
+    border-bottom: 5px solid #4281bb;
+}
+
+body {
+    background-color: #212122;
+    font-family: 'Jetbrains mono', monospace;
+}
+
+#container {
+    background-color: rgba(255,255,255,.95);
+    color: #2c4155;
+    max-width: 768px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    
+}
+
+p {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 1px solid #4281bb;
+    box-shadow: 1px 1px 1px 1px #376188;
+    padding: 25px 10px;
+    transition: box-shadow .5s; 
+
+}
+
+p:hover{
+    box-shadow: -1px -1px 1px 1px #4281bb
+    ;
+    transition: box-shadow .5s; 
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+#header{
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    color: #4281bb;
+}
+
+h1 {
+    border-bottom: 1px solid #4281bb;
+}
+#portfolio {
+    color: #376188;
+}
+body {
+    background-image: url("./colorado-5156229_1920.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
