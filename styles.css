@@ -131,3 +131,8 @@ button:hover{
     cursor: pointer; 
     color: aliceblue;
 }
+
+.colorWhite {
+    color: white;
+    text-shadow: 1px 1px black;
+}
