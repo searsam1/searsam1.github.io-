@@ -85,12 +85,12 @@ p:hover{
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 30px;
 }
 
 #header{
-    font-family: 'Lato', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: large;
     color: #4281bb;
 }
@@ -135,4 +135,11 @@ button:hover{
 .colorWhite {
     color: white;
     text-shadow: 1px 1px black;
+}
+
+.blueBtn{
+    border-color: darkblue; 
+    box-shadow: 1px 1px 1px 1px black;
+    background: linear-gradient(45deg, white, lightblue, blue);
+
 }
