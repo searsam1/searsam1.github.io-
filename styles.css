@@ -106,3 +106,28 @@ body {
     background-repeat: no-repeat;
     background-blend-mode: luminosity;
 }
+
+/* Reset default button styles */
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+    /* Reset default styles */
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    /* Apply custom styles */
+    /* Add your own custom styles here */
+    display: block;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+
+button:hover{
+    background-color: #4281bb;   
+    cursor: pointer; 
+    color: aliceblue;
+}
