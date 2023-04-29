@@ -1,188 +1,224 @@
 
-/* Fonts */
-/* 
-font-family: 'Dancing Script', cursive;
-font-family: 'Gloock', serif;
-font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'JetBrains Mono', monospace;
-font-family: 'Lacquer', cursive;
-font-family: 'Lato', sans-serif;
- */
-
-@media only screen and (max-width: 768px) {
-    body{
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width: 768px) {
-    body{
-        font-size: 16px;
-    }
-}
-
-
-@font-face {
-    font-family: 'falloutNormal';
-    src: url('Overseer-Font\\Overseer.otf') format('opentype');
-    
-}
-
-@keyframes a{
-    0% {
-        background-color: orange;
-    }
-    33.3% {
-        background-color: blue;
-    }
-    66.6% {
-        background-color: green;
-    }
-    100% {
-        background-color: orange;
-    }
-  }
-
-#SocialMediaBreadcrums > li{
-    list-style-type: none;
-}
-
-#logo {
-    position: absolute;
-}
-
 body {
-    background-color: #212122;
-    font-family: 'Jetbrains mono', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 25px;
+  background-image: url("./marble.jpg");
+  background-attachment: fixed;
 }
-
-#container {
-    color: #2c4155;
-    max-width: 768px;
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: 500;
-    
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
 }
-
-h2 {
-    text-align: start;
-    background-color: white;
-    max-width: 768px;
-    margin: auto;
-    margin-bottom: 10px;
-    border: 1px solid #000000;
-    box-shadow: 3px 3px 1px 1px #000000;
-    padding: 25px 10px;
-}
-
-p {
-    text-align: start;
-    color: black;
-    background-color: white;
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 10px;
-    border: 1px solid #000000;
-    box-shadow: 1px 1px 1px 1px #000000;
-    padding: 25px 10px;
-}
-
-
-
-h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 30px;
-}
-
-#header{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: large;
-    color: #050e17;
-}
-
 h1 {
-    border-bottom: 2px solid #000306;
+    font-size: 60px;
+    border-bottom: 1px solid black;
 }
-#portfolio {
-    color: #1b2024;
+h2{
+    font-size: 45px;
 }
-body {
-    background-color: #fff0e5;
-}
-
-/* Reset default button styles */
-button, input[type="button"], input[type="submit"], input[type="reset"] {
-    /* Reset default styles */
-    margin: 0;
-    padding: 0;
-    background: none;
-    border: none;
-    outline: none;
-    /* Apply custom styles */
-    /* Add your own custom styles here */
-    display: block;
-    border: 1px solid black;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
+@media only screen and (max-width: 768px) {
+    /* styles for screens 768px wide or smaller */
+    body{
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    li {
+        font-size: 1.3em;
+    }
   }
+  button {
+    margin: 10px auto;
+    display: block;
+    max-width: 768px;
+    width: 90%;
+    padding: 20px;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    background: none;
+    font-weight: 900;
+  }
+
+  button:hover {
+    color: pink;
+    background-color: black;
+    transition: all 1s;
+    cursor: pointer;
+  }
+  button {
+    transition: all 1s;
+
+  }
+
+
+/* body {
+    background-color: #ed8bbc;
+    background-image: radial-gradient(black 2px, transparent 0),
+      radial-gradient(black 2px, transparent 0);
+    background-size: 25px 25px;
+    background-position: 0 0, 25px 25px;
+  } */
   
 
-button:hover{
-    background-color: #4281bb;   
-    cursor: pointer; 
-    color: aliceblue;
-}
-
-.colorWhite {
-    color: white;
-    text-shadow: 1px 1px black;
-}
-
-.blueBtn{
-    border-color: darkblue; 
+p {
+    max-width: 768px;
+    margin: 20px auto;
+    padding: 20px;
     box-shadow: 1px 1px 1px 1px black;
-    background: linear-gradient(45deg, white, lightblue, blue);
-
-}
-
-.yellowGreenBtn{
-    border-color: darkblue; 
-    box-shadow: 1px 1px 1px 1px black;
-    background: linear-gradient(45deg, 
-    lightblue, yellow
-    );
-}
-
-.HotBtn{
-    border-color: darkblue; 
-    box-shadow: 1px 1px 1px 1px black;
-    background: linear-gradient(45deg, 
-    red, yellow
-    );
-    color: black;
+    border-radius: 5px;
+    font-weight: 900;
+    text-align: center;
 }
 
 
-.EnderBtn{
-    border-color: darkblue; 
-    box-shadow: 1px 1px 1px 1px black;
-    background: linear-gradient(45deg, 
-    white, rgb(181, 51, 181), rgba(255, 255, 255, 0.952)
-    );
-    color: wheat;
-    text-shadow: 1px 1px black;
+.image-container img {
+    width: 80%;
+    max-width: 768px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+  }
+  
+  h2 {
+    text-align: center;
+    max-width: 768px;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-top: 75px;
+    
+  }
+  h2  {
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 10px;
+  }
+
+  
+
+  .sprinkle {
+    width: 100px;
+    height: 10px;
+    background-color: #f1c40f;
+    position: absolute;
+    display: inline;
+    overflow: hidden;
+  }
+  
+.hidden {
+    display: none;
+}
+ul {
+    list-style-type: none;
+    
+}
+li {
+    border-bottom: 1px solid black;
+    max-width: 768px;
+    text-align: center;
+
 }
 
-pre code {
+.alternate-list li:nth-child(even) {
+    background-color: rgb(218, 86, 209, .1);
 
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-}
-pre {
-    background-color: #eaf0f5;
-    padding: 10px;
-}
+  }
 
+
+  footer {
+    margin: 10px;
+    text-align: center;
+  }
+  footer > a {
+    color: #000
+  }
+  footer >  a::before {
+    content: "<";
+    color: red;
+  }
+  footer >  a::after {
+    content: ">";
+    color: red;
+  }
+
+  .slideshow {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide:first-child {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    75% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide:nth-child(1) {
+    animation: slide 10s linear infinite;
+  }
+  
+  .slide:nth-child(2) {
+    animation: slide 10s linear infinite 2.5s;
+  }
+  
+  .slide:nth-child(3) {
+    animation: slide 10s linear infinite 5s;
+  }
+  
+  .slide:nth-child(4) {
+    animation: slide 10s linear infinite 7.5s;
+  }
+  
